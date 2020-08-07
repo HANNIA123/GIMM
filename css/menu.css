@@ -1,0 +1,110 @@
+#menu-bar{
+
+    display: none;
+}
+/*Icono del menú*/
+header label{
+    float: right;
+    font-size: 40px;
+    margin: 6px 0;
+cursor: pointer;
+}
+
+.menu{
+   position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+   opacity: 0.9;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+    border-top: 2px solid #0173d4;
+    
+}
+
+.menu a{
+    display: block;
+    color: #000;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 2px solid rgba(161,161,161,0.3);
+    text-align: center;
+    
+}
+.menu a:hover{
+color: white;
+    background-color: #6dc5dd;
+}
+
+/*Funcionar al hacer click al estar con el click selecciona el menu*/
+#menu-bar:checked ~ .menu{ 
+    transform: translateX(0%);
+}
+.icon-menu{
+    color:#8e8e8e;
+    
+ 
+}
+
+.icon-menu:hover{
+    background-color: #d0d0d0;
+    border-radius: 2px;
+}
+
+/*parte responsive*/
+@media(min-width:1200px){
+    header{
+        background-color: #fff;
+        
+        border-bottom: solid 2px #dcdcdc;
+    }
+    header .contenedor{
+         background-color: #fff;
+        
+    }
+    .menu{
+       
+         padding-top: 10px; 
+        background-color: #fff;
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+         border-top: transparent;
+        opacity: 0.9;
+        
+        
+    }
+    .menu a{
+font-size: 20px;
+        border: none;
+         height: 60px;
+    }
+    .menu a:hover{
+        border-bottom: solid 3px #0173d4;
+        background-color: #fff;
+        color:#000;
+
+}
+
+    
+    header label{
+        display: none;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    .activa{
+  
+      border-bottom: solid 3px #0173d4 !important;
+        
+
+        
+    
+    }
+}
