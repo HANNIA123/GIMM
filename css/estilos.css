@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url(slider_footer.css);
+
+@import url(banner.css);
+
+@import url(menu.css);
+@import url(acerca.css);
+
     
 * {
     margin: 0;
@@ -8,23 +16,24 @@
     
 }
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 header{
+    font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
     height: 90px;
     background-color: #f8f8f8;
-
-  
-    color: #000;
-    
+color: #000;
+    opacity: 0.9;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+    border-bottom: solid 2px #dcdcdc;
     
     
 }
+
 /*Temporal*/
 #slider{
     width: 100%;
@@ -67,7 +76,44 @@ header .contenedor{
     display: table;
 background-color: #f8f8f8;
 }
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+#acerca-de{
+    text-align: center;
+    
+}
 
+footer{
+    margin-top: -27px;
+     background-color: #474654; 
+}
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+   
+    
+}
+.copy{
+    margin-top: 15px;
+    font-size: 13px;
+    color: #fff;
+}
+.sociales{
+    
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+.sociales a{
+    color: #fff;
+    text-decoration: none;
+}
 @media(min-width:1200px){
     .contenedor{
         
@@ -86,3 +132,53 @@ background-color: #f8f8f8;
 
 }
 
+@media(min-width:768px){
+    .copy{
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .sociales{
+         margin-top: 25px;
+        width: auto;
+        font-size: 25px;
+    
+    }
+    footer .contenedor{
+        margin-top: 25px;
+        justify-content: space-between;
+        height: 70px;
+    }
+    
+   
+
+}
+/*Boton temporal*/
+.bot{
+    text-decoration: none;
+    display: block;
+   
+    color: #fff;
+    background-color: #0173d4;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+     font-family: 'Rubik', sans-serif !important;
+    font-size: 16px !important;
+    text-align: center;
+    
+    
+    
+}
+.bot:hover{
+    background-color: #63B6FD;
+}
+
+#acerca .bot{
+     width: 90px;
+    
+}
+.container_art .bot{
+    
+   width: 140px;
+    
+}
