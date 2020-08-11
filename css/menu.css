@@ -1,7 +1,8 @@
 #menu-bar{
-
     display: none;
 }
+
+
 /*Icono del menú*/
 header label{
     float: right;
@@ -12,17 +13,21 @@ cursor: pointer;
 
 .menu{
    position: absolute;
-    top: 70px;
+    top: 90px;
     left: 0;
     width: 100%;
     height: auto;
     background: #f8f8f8;
-   opacity: 0.9;
+opacity: 0.9;
     transition: all 0.5s;
     transform: translateX(-100%);
-    border-top: 2px solid #0173d4;
-    
+   
 }
+
+
+
+
+
 
 .menu a{
     display: block;
@@ -36,13 +41,18 @@ cursor: pointer;
 }
 .menu a:hover{
 color: white;
-    background-color: #6dc5dd;
+    background-color: #0D87EE ;
 }
+
+
+
 
 /*Funcionar al hacer click al estar con el click selecciona el menu*/
 #menu-bar:checked ~ .menu{ 
     transform: translateX(0%);
 }
+
+
 .icon-menu{
     color:#8e8e8e;
     
@@ -54,13 +64,35 @@ color: white;
     border-radius: 2px;
 }
 
+/*Submenú*/
+.submenu{
+    
+
+}
+.con-sub {
+    display: none;
+ 
+
+}
+.con-sub a:hover{
+    background-color: #5DB2FA;;
+}
+.icono{
+    float: right;
+}
+
 /*parte responsive*/
 @media(min-width:1200px){
     header{
         background-color: #fff;
-        
+        opacity: 0.9;
         border-bottom: solid 2px #dcdcdc;
     }
+    .icono{
+    display: block;
+        justify-content: space-between;
+}
+
     header .contenedor{
          background-color: #fff;
         
@@ -81,7 +113,7 @@ color: white;
         
     }
     .menu a{
-font-size: 20px;
+        font-size: 20px;
         border: none;
          height: 60px;
     }
@@ -91,6 +123,19 @@ font-size: 20px;
         color:#000;
 
 }
+    /*Aun no funciona*/
+    .submenu a:hover{
+    display: flex;
+ 
+   
+}
+   .submenu a:hover{
+  
+        background-color: #000;
+     
+
+}
+
 
     
     header label{
