@@ -1,27 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap');    
 @import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
-.contenedor{
-       display: flex;
-        width: 1000px;
-        margin: 0;
-    }
+
 header{
-    font-family: 'Allerta', sans-serif;
-    
-    font-size: 16px;
-    min-height:80px;
-    width: 100%;
-    top:0;
-    left: 0;
-    background-color: #fff;
-    color: #000;
-    /*menú de lado (final)*/
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position:fixed;
-	z-index:200;
-    
+    opacity: 0.95;
 }
 #btn-menu{
     display: none;
@@ -84,19 +66,26 @@ color: #0173d4;
      border-top: 2px solid #0173d4;
    justify-content: center;
     min-width: 130px; 
+    
 }
 
 .con li{
+    
    padding: 0px;
      border-bottom: 1px solid #E8E8E8;
+    background-color: #D9D9D9;
+    opacity: 1 !important;
     
 }
 .con li a{
-    font-family: sans-serif;
-    font-size: 14px;
+    font-family: 'Karma', serif;
+    font-size: 16px;
+    
     padding: 18px;
+   
 }
 .menu ul li:hover>ul{
+   
     display: block;
     border-radius: 2px;
       z-index: 400;
@@ -149,18 +138,11 @@ color: #0173d4;
     
 }
 @media(max-width:768px){
-    #ocultar{
-        position: fixed;
-        height: 100%;
-        width: 100%,
-           background: rgba(0, 0, 0, 0.6);
-    z-index: 9000;
-    display: none;
-        
-    }
+ 
     header{
         justify-content: flex-start;
         height: 80px;
+        opacity: inherit;
        
       
     }
@@ -219,6 +201,7 @@ color: #0173d4;
         float: right;
         background-color: #F0F0F0;
         
+        
     }
     .image-group {
          width: 80%;
@@ -243,7 +226,7 @@ color: #0173d4;
        
     }
  
-  
+    
     .menu ul{
   margin-right: 10px;
         width: 90%;
@@ -298,6 +281,9 @@ color: #0173d4;
     .con{
         
         border-top: 0;
+    }
+    .con li{
+       background-color: #F0F0F0; 
     }
     .con li a{
         font-family: 'Raleway', sans-serif;

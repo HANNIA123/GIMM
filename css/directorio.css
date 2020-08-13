@@ -3,6 +3,7 @@
     margin-right: auto;
     max-width: 1150px;
     width: 100%;
+    background-color: #fff;
 }
 
 
@@ -42,7 +43,4 @@
     flex-wrap: wramp;      
 }    
 }
-
-
-
 
