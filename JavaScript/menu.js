@@ -1,50 +1,71 @@
  
-$(document).ready(function () {
-    //Detectar redimension de la pantalla
-    $(window).resize(function () {
-         cambio();
-    });
-    
-    cambio();
-    
-    function cambio(){
-         if($(window).width() <=1200){
-    //menú responsive, dispositivos moviles
-    $(".submenu ").click(function(e){
 
 
-       e.preventDefault();
-    var contenido=$(this).next(".con-sub");
-     
 
-        if(contenido.css("display")=="none"){ //open	
-     
-           
-       contenido.slideDown(250);			
-          $(this).addClass("open");
-      
-        }
-        else{ //close		
-          contenido.slideUp(250);
-          $(this).removeClass("open");	
-        
-    }
-      
-                         });
-    }
+/*Cerrar menú*/
+$("#btn-sal").click(function(e){
+$("#cabecera").css('transform','translateX(-100%)')   
+     $('body').css('opacity', '1');
+ 
+
+})
+/*Abrir menú*/
+$("#btn-menu").click(function(e){
+$("#cabecera").css('position','absolute');    
     
-        else{
-            //Otra función para el menú tamaño completo
-            alert("tamaño grande");
-        }
-       
+$("#cabecera").css('transform','translateX(0%)');
+     //$('#ocultar').css('opacity','0.9');
+       var height = $(window).height();
+    $('#cabecera').height(height);
+    $('.menu').height(height);
+   //$('#ocultar').show(); 
+
+    //$('#ocultar').css('opacity', '0.9');
+})
+
+
+
+$(".submenu").click(function (e) {
    
+      
+        e.preventDefault();
+        if ($(this).hasClass('activado')) {
+            
+            $(this).removeClass('activado');
+                // $(this).css('background-color',"#fff");
+         
+            $(this).children('ul').slideUp();
+       
+               
+           
+            
+        }
+        else {
+          
+            $('.con').slideUp();
+           
+            $('.submenu').removeClass('activado');
+          
+            $(this).addClass('activado');
+         
+            
+            $(this).children('ul').slideDown();
+                
+           
+           
+           
+        }
         
-        
-        
+    })
+    //propagacion de eventos 
+$("ul").click(function (p) {
+    p.stopPropagation();
+})
+
+
+
+$(window).resize(function () {
+    if ($(window).width() >= 1100) {
+         location.reload();
     }
 });
- 
- 
- 
- 
