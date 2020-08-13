@@ -5,43 +5,66 @@
     <meta charset="UTF-8">
     <title>GIMM</title>
     <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+   
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
     
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/menu.css">
+    
     <link rel="stylesheet" href="css/acerca.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     
 </head>
 
 <body>
    
-
-<header>
-<div class="contenedor" >
-    <div class="image-group">
-        <img src="Images/logo_grupo3.png" alt="">
-    </div>
-        <input type="checkbox" id="menu-bar">
-        <label class="icon-menu" for="menu-bar"></label>
-        
-<nav class="menu">
-           <ul>
-           <li>
-           <a href="" class="activa">Inicio</a>
-           </li>
-                <li><a href="" class="menu-principal">Conócenos</a></li>
-                 <li><a href="">Investigación </a></li>
-                  <li><a href="">Eventos</a></li>
-                   <li><a href="">Herramientas</a></li>
-           <li><a href="">Directorio </a></li>
-           </ul>
-       </nav>      
+ <header>
+        <div class="contenedor">
+            <div class="image-group"> <img src="Images/logo_grupo3.png" alt=""> </div>
+            <div class="box">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu" class="icon-menu-1"></label>
+            </div>
+            <div id="cabecera">
+                <div id="ground-dark"></div>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <div id="esc">
+                            <input type="checkbox" id="btn-sal">
+                            <label for="btn-sal" class="icon-cancel"></label>
+                        </div>
+                        <li class="sin"><a href="#">Inicio</a></li>
+                        <li class="sin"><a href="#">Conócenos</a></li>
+                        <li class="submenu"><a href="#">Investigación
+        <span class="icon-down-open"></span>
+        </a>
+                            <ul class="con">
+                                <li><a href="#">Proyectos</a></li>
+                                <li><a href="#">Tesis</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu"><a href="#">Eventos
+          <span class="icon-down-open"></span>
+        </a>
+                            <ul class="con">
+                                <li><a href="#">Calendarios</a></li>
+                                <li><a href="#">Reuniones</a></li>
+                                <li><a href="#">Talleres</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu"><a href="#">Herramientas
+        <span class="icon-down-open"></span>
+        </a>
+                            <ul class="con">
+                                <li><a href="#">Applets</a></li>
+                            </ul>
+                        </li>
+                        <li class="sin"><a href="#">Directorio</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-   </header>
-   
-   
+    </header>
    
    
    <main>
@@ -182,7 +205,7 @@
               </article>
               <article class="informa">
                  <h4>Objetivos</h4>
-                 <div class="acerca-i">                  <label for="" class="icon-calendar-check-o"></label>
+                 <div class="acerca-i">                  <label for="" class="icon-calendar-check"></label>
                  </div>
 <div class="acerca-t">
         <p>
@@ -268,22 +291,10 @@
         </div>
     </div>
 
-	<!-- Footer
-      <div class="container_footer">
-    		<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon-facebook"><span class="label"></span></a></li>
-					
-					<li><a href="#" class="icon-twitter"><span class="label"></span></a></li>
-					
-					<li><a href="#" class="icon-youtube-play"><span class="label"></span></a></li>
-				</ul>
-				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
-			</footer>
-    </div>   -->
-
+	
     <!-- Scripts -->
   <script src="JavaScript/arriba.js"></script> 
+    <script src="JavaScript/menu.js"></script>
 
 </body>
 
