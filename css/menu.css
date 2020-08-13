@@ -4,6 +4,7 @@
 
 header{
     opacity: 0.95;
+     
 }
 #btn-menu{
     display: none;
@@ -101,7 +102,7 @@ color: #0173d4;
     
 }
 .image-group img{
-    height: 70px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -117,33 +118,39 @@ color: #0173d4;
 }
 /*Menú para dispositivos moviles tam tablet*/
 
-@media(min-width:768px) and (max-width:1024px){
+@media(min-width:842px) and (max-width:1190px){
     header{
     height: 150px;
     color: #000;
+        border-bottom: 0 !important;
     /*menú de lado (final)*/
     
     
 }
+    
+#banner{
+        margin-top: 150px;
+    }
     
 .menu ul{
     float: right;
     background-color: #fff;
     display: flex;
     list-style: none;
+   
 }
 
 
     
     
 }
-@media(max-width:768px){
+@media(max-width:842px){
  
     header{
         justify-content: flex-start;
-        height: 80px;
-        opacity: inherit;
-       
+         border-bottom: 1px solid rgb(184,184,184,0.5); !important;
+        
+      
       
     }
     header label{
