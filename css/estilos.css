@@ -69,17 +69,6 @@ section{
     
 }
 
-@media(min-width:1200px){
-    .contenedor{
-        
-        width: 1000px;
-    }
-    
-}
-   
-
-}
-
 /*Boton temporal*/
 .bot{
     text-decoration: none;
@@ -105,8 +94,21 @@ section{
      width: 90px;
     
 }
-.container_art .bot{
-    
+[MyType="mas"]{
+  float: right;
    width: 140px;
     
 }
+
+
+@media(min-width:1200px){
+    .contenedor{
+        
+        width: 1000px;
+    }
+    
+}
+   
+
+}
+
