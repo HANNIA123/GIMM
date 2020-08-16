@@ -64,6 +64,9 @@
     margin-top: 0;
 }
 @media(max-width: 1080px){
+     .mes{
+        margin-left: 10px;
+    }
     .contenedor-event{
        
         display: block;
