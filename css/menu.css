@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap');    
 @import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
-
+header{
+    height: 80px;
+}
 
 #btn-menu{
     display: none;
@@ -92,7 +94,7 @@ color: #0173d4;
 }
 
 .image-group{
-    width: 25%;
+    width: 20%;
    
     justify-content: center;
     float: left;
@@ -115,22 +117,43 @@ color: #0173d4;
 }
 /*Menú para dispositivos moviles tam tablet*/
 
+@media(max-width:1100px) {
+    
+   
+    header .contenedor{
+        height: rgb();
+        
+        width: 100%;
+    }
+     header{
+        height: 150px ;
+        background-color: aqua;
+        
+    }
+    #banner{
+        margin-top: 150px;
+    }
 
-@media(max-width:1180px){
+}
+
+@media(max-width:830px){
+     #banner{
+        margin-top: 80px;
+    }
  
     header{
         justify-content: flex-start;
          border-bottom: 1px solid rgb(184,184,184,0.5);
-        opacity: 1;
+    
         
-      
+      height: 80px;
       
     }
     header label{
         height: 20%;
         margin-top: 9px;
      
-      color: #7C7C7C;
+          color: #7C7C7C;
         display: block;
         z-index: 50;
  
@@ -164,10 +187,10 @@ color: #0173d4;
         top:0;/*menu despues de header*/
         left: 0;
         width: 100%;
-     transform: translateX(-100%);
+         transform: translateX(-100%);
 
         transition: all 0.5s;
-        z-index: 9999;
+       
         background-color: rgb(0,0,0,0.5);
       
         
@@ -180,14 +203,12 @@ color: #0173d4;
     .menu{
      width: 50%;
         float: right;
-        background-color: rgb(240,240,240,1);
+        background-color: rgb(240,240,240);
       
-        opacity: inherit !important;
+       
         
     }
-    #menu{
-        opacity: 1;
-    }
+ 
     .image-group {
          width: 80%;
   float: left;
@@ -219,7 +240,7 @@ color: #0173d4;
         display: block; 
  
           background-color: rgb(240,240,240,1);
-  opacity: inherit!important;
+ 
        
     }
     .menu a{
@@ -277,8 +298,7 @@ color: #0173d4;
     }
     .menu a span{
     margin-right: 10px;
-  
- 
+
    
     
 }
