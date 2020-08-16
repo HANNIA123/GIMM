@@ -2,10 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap');    
 @import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
 
-header{
-    opacity: 0.95;
-     
-}
+
 #btn-menu{
     display: none;
 }
@@ -23,7 +20,7 @@ header label{
 
 
 .menu ul{
-    background-color: #fff;
+    
     margin-top: 4px;
     
     display: flex;
@@ -96,7 +93,7 @@ color: #0173d4;
 
 .image-group{
     width: 25%;
-    background-color: #fff;
+   
     justify-content: center;
     float: left;
     
@@ -123,7 +120,8 @@ color: #0173d4;
  
     header{
         justify-content: flex-start;
-         border-bottom: 1px solid rgb(184,184,184,0.5); !important;
+         border-bottom: 1px solid rgb(184,184,184,0.5);
+        opacity: 1;
         
       
       
@@ -177,13 +175,18 @@ color: #0173d4;
      #ground-dark{
          width: 50%;
          
+         
     }
     .menu{
      width: 50%;
         float: right;
-        background-color: #F0F0F0;
+        background-color: rgb(240,240,240,1);
+      
+        opacity: inherit !important;
         
-        
+    }
+    #menu{
+        opacity: 1;
     }
     .image-group {
          width: 80%;
@@ -214,7 +217,9 @@ color: #0173d4;
         width: 90%;
           height: 100%;
         display: block; 
-    background-color: #F0F0F0;
+ 
+          background-color: rgb(240,240,240,1);
+  opacity: inherit!important;
        
     }
     .menu a{
@@ -277,6 +282,7 @@ color: #0173d4;
    
     
 }
+    
     
 }
 
