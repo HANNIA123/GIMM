@@ -118,33 +118,8 @@ color: #0173d4;
 }
 /*Menú para dispositivos moviles tam tablet*/
 
-@media(min-width:842px) and (max-width:1190px){
-    header{
-    height: 150px;
-    color: #000;
-        border-bottom: 0 !important;
-    /*menú de lado (final)*/
-    
-    
-}
-    
-#banner{
-        margin-top: 150px;
-    }
-    
-.menu ul{
-    float: right;
-    background-color: #fff;
-    display: flex;
-    list-style: none;
-   
-}
 
-
-    
-    
-}
-@media(max-width:842px){
+@media(max-width:1180px){
  
     header{
         justify-content: flex-start;
@@ -304,6 +279,10 @@ color: #0173d4;
 }
     
 }
+
+
+
+
 
 
 
