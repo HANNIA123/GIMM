@@ -65,7 +65,7 @@ $("ul").click(function (p) {
 
 
 $(window).resize(function () {
-    if ($(window).width() >= 1100) {
+    if ($(window).width() >= 830) {
          location.reload();
     }
 });
