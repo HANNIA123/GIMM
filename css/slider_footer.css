@@ -16,7 +16,6 @@ height: 640
     max-width: 10000px;
     width: 100%;
     height: 40%; /*Recuadros pequeños del slider*/
-    border-radius: 6px;
     overflow: hidden;
 }
 
