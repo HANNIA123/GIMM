@@ -71,18 +71,23 @@
         <section id="banner"> <img src="Images/fondo6.jpg" alt=""></section>
           
         <!-- Contenido -->  
-    
+       <div class="contenedor" type="applet" >
           <h1><center>APPLET EJERCICIO 1</center></h1><br>
-          <section class="contenedor_acordeon">
-          <div class="acordeon_applets">
+       
+        
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta earum asperiores sunt assumenda ipsa fuga unde sapiente, distinctio, officia obcaecati deleniti facilis perspiciatis natus similique delectus! Unde aliquid a vel maiores deleniti cupiditate excepturi.</p><br>
           
            <div id="ggbApplet"></div>
-          <script>
+      
+       <br>
+       <br>
+   </div>     
+</main>
+    <script>
 var parameters = {
 "id": "ggbApplet",
-"width":1290,
-"height":657,
+"width":1300,
+"height":757,
 "showMenuBar":true,
 "showAlgebraInput":true,
 "showToolBar":true,
@@ -121,10 +126,7 @@ var views = {'is3D': 0,'AV': 0,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,
 var applet = new GGBApplet(parameters, '5.0', views);
 window.onload = function() {applet.inject('ggbApplet')};
 applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
-</script><br><br>    
-   </div></section>     
-</main>
-   
+</script>
    
    <!-- Footer -->
    
@@ -147,3 +149,4 @@ applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www
 </body>
 
 </html>
+                     
