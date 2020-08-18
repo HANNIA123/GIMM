@@ -100,11 +100,25 @@ section{
 }
 
 
+#ggbApplet{
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
 @media(min-width:1200px){
     .contenedor{
         
         width: 1000px;
     }
+    [type="applet"]{
+
+        width: 1300px;
+    
+}
     
 }
    
