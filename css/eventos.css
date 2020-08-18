@@ -76,6 +76,9 @@
         margin-right: auto;
         
     }
+     .inf-event{
+        margin-left: 0px;
+    }
     .inf-event p{
         font-size: 15px;
     }
